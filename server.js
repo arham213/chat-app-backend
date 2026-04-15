@@ -15,17 +15,22 @@ const userRoutes = require('./routes/user');
 const app = express();
 const server = http.createServer(app);
 
+const allowedOrigins = process.env.FRONTEND_URL
+    ? [process.env.FRONTEND_URL, 'http://localhost:3000']
+    : ['http://localhost:3000'];
+
 // Initialize Socket.IO with CORS
 const io = new Server(server, {
     cors: {
-        origin: '*', // In production, specify your frontend URL
-        methods: ['GET', 'POST']
+        origin: allowedOrigins,
+        methods: ['GET', 'POST'],
+        credentials: true
     }
 });
 
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:3000'], // In production, specify your frontend URL
+    origin: allowedOrigins,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
