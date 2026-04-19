@@ -73,4 +73,6 @@ See the [frontend README](https://github.com/arham213/chat-app-frontend#readme) 
 
 ---
 
+## Author
+
 [LinkedIn](https://linkedin.com/in/arhamasjid) · arhamasjid213@gmail.com
