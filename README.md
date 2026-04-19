@@ -8,7 +8,7 @@
 
 Node.js + Express backend for the real-time chat system. Manages WebSocket connections via Socket.IO, persists messages and user data in MongoDB, and handles JWT-based authentication.
 
-**Live:** [chat-app-backend-dummy.up.railway.app](https://chat-app-backend-dummy.up.railway.app) &nbsp;|&nbsp; **Frontend:** [chat-app-frontend-beta-three.vercel.app](https://chat-app-frontend-beta-three.vercel.app) ([repo](https://github.com/arham213/chat-app-frontend))
+**Live:** [chat-app-backend-dummy.up.railway.app](https://chat-app-backend-dummy.up.railway.app) &nbsp;|&nbsp; **Frontend:** [chat-app-frontend](https://github.com/arham213/chat-app-frontend)
 
 ---
 
